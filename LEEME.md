@@ -1,0 +1,144 @@
+# Hotel Chibchacum — sitio web
+
+Landing page de una sola página para el **Hotel Chibchacum** (Cra 2 N° 6-46, Zetaquira, Boyacá).
+
+La estructura editorial está tomada del template de Figma
+[*Lovisa Malin Hotel — Landing page website*](https://www.figma.com/community/file/1282705958658997288/lovisa-malin-hotel-landing-page-website)
+(Dot Creative Market): hero a pantalla completa con titular serif enorme, tarjetas escalonadas,
+bloques tipográficos mezclados con fotos, bandas oscuras a sangre, mosaico de galería, mapa
+ilustrado y formulario de contacto con campos subrayados.
+
+El azul profundo del original se reemplazó por la **paleta del logo**: oro degradado, marrón y negro.
+
+---
+
+## Cómo verlo
+
+Abra `index.html` con doble clic. No necesita servidor ni compilación.
+
+Si quiere servirlo en local (recomendado para probar como en producción):
+
+```
+npx serve .
+```
+
+---
+
+## Estructura
+
+```
+hotel-chibchacum/
+├── index.html          ← todo el contenido de la página
+├── css/styles.css      ← estilos y paleta
+├── js/main.js          ← menú móvil, animaciones, galería, formulario
+└── img/
+    ├── logo.png            ← logo con fondo transparente (generado del original)
+    ├── logo-original.jpg   ← logo tal como lo entregó usted
+    ├── favicon.png
+    ├── fachada.jpg         ← fachada del hotel
+    ├── cascada-termal.jpg  ← cascada de los Ocho Colores
+    ├── laguna.jpg          ← embalse / paisaje de Lengupá
+    ├── habitacion-sencilla.jpg ← sencilla, cama doble
+    ├── habitacion-doble.jpg    ← doble, dos camas separadas
+    ├── habitacion-familiar.jpg ← familiar, camarote y cama doble
+    ├── cafe.jpg            ← café de la región
+    └── zetaquira-plaza.jpg ← parque principal de Zetaquira
+```
+
+---
+
+## Paleta (tomada del logo con cuentagotas)
+
+| Variable CSS  | Color     | Uso |
+|---------------|-----------|-----|
+| `--negro`     | `#0B0907` | fondo del hero y del footer |
+| `--tinta`     | `#14100B` | bandas oscuras |
+| `--marron`    | `#5A3606` | texto principal sobre crema |
+| `--marron-cl` | `#7A5324` | texto secundario |
+| `--oro-osc`   | `#8A5F14` | detalles, líneas, eyebrows |
+| `--oro`       | `#C09A3C` | oro medio del degradado |
+| `--oro-cl`    | `#EEDB7C` | oro claro / brillos |
+| `--arena`     | `#C9B48C` | bloques de acento |
+| `--crema`     | `#F4EEE1` | fondo de secciones claras |
+| `--crema-2`   | `#EAE0CB` | fondo alterno |
+
+Los degradados dorados (`Herencia de la tierra`, botones, `Chibchacum`) usan los tres oros en el
+mismo orden que el degradado del logo.
+
+**Tipografías:** Cormorant Garamond (títulos) + Jost (texto), ambas de Google Fonts.
+
+---
+
+## ⚠️ Antes de publicar — pendientes
+
+1. **Teléfono** — ✅ `310 816 9518`. Está en la sección de contacto (con enlace `tel:` y
+   enlace de WhatsApp a `wa.me/573108169518`) y en el footer.
+2. **Correo** — ✅ `admin@hotelchibchacum.co`. Está en la sección de contacto, en el footer y
+   en `js/main.js` (variable `href` dentro del `submit` del formulario).
+3. **Formulario** — ✅ **funcionando.** Activado y probado con envíos reales: las solicitudes
+   llegan a `admin@hotelchibchacum.co`. Ver «Cómo funciona el formulario» más abajo.
+4. **Fotos de habitaciones** — ✅ las tres tarjetas de `#habitaciones` ya usan fotos reales de
+   los cuartos. Las fotos vienen algo oscuras y con grano; si consigue tomas mejor iluminadas,
+   solo hay que reemplazar los archivos `img/habitacion-*.jpg` conservando los nombres.
+5. **Boletín** — ✅ el formulario del footer usa el mismo envío del punto 3; los correos
+   suscritos llegan al mismo buzón con el asunto «Nueva suscripción al boletín».
+
+---
+
+## Cómo funciona el formulario — ✅ ACTIVO
+
+Las solicitudes se envían con **FormSubmit** (formsubmit.co): gratis, sin clave, sin cuenta
+y sin servidor propio. Ya está activado y probado con envíos reales; no hay nada que hacer.
+
+### Qué recibe usted
+
+Un correo con asunto *«Solicitud de reserva · [nombre del huésped]»* y una tabla con:
+nombre, teléfono/WhatsApp, correo, fecha de llegada, fecha de salida, número de huéspedes
+y el mensaje. Al darle **Responder**, la respuesta va directo al huésped.
+
+Las suscripciones al boletín llegan al mismo buzón con asunto *«Nueva suscripción al boletín»*.
+
+### Si el envío falla
+
+El formulario no pierde los datos: muestra un aviso con un enlace para mandar la solicitud
+por correo y el número de WhatsApp. El visitante siempre tiene salida.
+
+### Cambiar la dirección que recibe las solicitudes
+
+Edite `CORREO_HOTEL` en `js/main.js` (línea 13). **Ojo:** cada dirección nueva necesita su
+propia activación — FormSubmit le mandará otro correo de «Activate Form» al buzón nuevo.
+Mientras no se active, el formulario mostrará el aviso de error. Si eso pasa, abra la consola
+del navegador (F12) y verá un mensaje explicando exactamente qué falta.
+
+### Notas
+
+- El correo del hotel va escrito en el JavaScript, pero ya aparece público en la página
+  (contacto y pie), así que no es una exposición nueva.
+- El formulario lleva un campo-trampa invisible (`_honey`) que filtra bots automáticos.
+- Para probarlo en su computador, ábralo con un servidor local (`npx serve .`) y no con doble
+  clic: algunos navegadores bloquean los envíos desde archivos `file://`.
+
+---
+
+## Datos del hotel usados en los textos
+
+Tomados de la página de Facebook del hotel y de fuentes públicas:
+
+- Cra 2 N° 6-46, Zetaquira, Boyacá · se admiten mascotas avisando con anticipación
+- Habitaciones sencillas y dobles con baño privado, agua caliente, parqueadero privado, internet
+  y televisión por cable · 19 habitaciones
+- Zetaquira: provincia de Lengupá, 1.665 m s. n. m., 67 km desde Tunja
+- Aguas termales del río Mueche: ~32 nacederos, no volcánicas, bajas en azufre, hasta 68,5 °C
+- Cascada de los Ocho Colores: la cascada termal más alta de Colombia, 14 m
+
+---
+
+## Detalles técnicos
+
+- HTML semántico con datos estructurados `schema.org/Hotel` (mejora cómo se ve en Google).
+- Sin dependencias ni build: solo HTML, CSS y JavaScript plano.
+- Responsive en tres cortes: 1024 px, 860 px (aparece el menú hamburguesa) y 560 px.
+- Accesibilidad: enlace «saltar al contenido», foco visible, menú y galería operables con teclado
+  (Enter/Espacio para abrir una foto, Esc para cerrar), textos alternativos en las imágenes.
+- Respeta `prefers-reduced-motion`: si el sistema pide menos animación, se desactivan.
+- Hoja de estilos de impresión básica.
