@@ -103,12 +103,29 @@ Las suscripciones al boletín llegan al mismo buzón con asunto *«Nueva suscrip
 El formulario no pierde los datos: muestra un aviso con un enlace para mandar la solicitud
 por correo y el número de WhatsApp. El visitante siempre tiene salida.
 
+### ⚠️ La activación es POR DOMINIO
+
+Esto no es obvio y conviene tenerlo claro: FormSubmit no activa «el correo», activa la
+combinación **correo + dominio desde el que se envía**. Cada vez que el sitio cambie de
+dirección hay que activar una vez más:
+
+| Dominio | Estado |
+|---|---|
+| `localhost` (pruebas locales) | ✅ activado |
+| `dreinerale.github.io` (sitio publicado) | ⬅️ pendiente de un clic |
+| `hotelchibchacum.co` (cuando se conecte) | pendiente, llegará otro correo |
+
+**Cómo se resuelve siempre:** haga un envío de prueba desde el sitio; FormSubmit le manda
+un correo con el botón «Activate Form» a `admin@hotelchibchacum.co`; haga clic y ya queda
+para siempre en ese dominio.
+
+**Cómo se reconoce el problema:** el formulario muestra «No pudimos enviar la solicitud».
+Abra la consola del navegador (F12) y verá un mensaje explicando exactamente qué falta.
+
 ### Cambiar la dirección que recibe las solicitudes
 
-Edite `CORREO_HOTEL` en `js/main.js` (línea 13). **Ojo:** cada dirección nueva necesita su
-propia activación — FormSubmit le mandará otro correo de «Activate Form» al buzón nuevo.
-Mientras no se active, el formulario mostrará el aviso de error. Si eso pasa, abra la consola
-del navegador (F12) y verá un mensaje explicando exactamente qué falta.
+Edite `CORREO_HOTEL` en `js/main.js` (línea 13). Cada dirección nueva necesita su propia
+activación, igual que arriba.
 
 ### Notas
 
