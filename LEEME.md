@@ -134,7 +134,7 @@ dirección hay que activar una vez más:
 | Dominio | Estado |
 |---|---|
 | `localhost` (pruebas locales) | ✅ activado |
-| `dreinerale.github.io` (sitio publicado) | ⬅️ pendiente de un clic |
+| `dreinerale.github.io` (sitio publicado) | ✅ activado y probado |
 | `hotelchibchacum.co` (cuando se conecte) | pendiente, llegará otro correo |
 
 **Cómo se resuelve siempre:** haga un envío de prueba desde el sitio; FormSubmit le manda
