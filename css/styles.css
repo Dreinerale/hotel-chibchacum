@@ -309,10 +309,6 @@ button,input,select,textarea{ font:inherit; color:inherit; }
   color:transparent; -webkit-text-stroke:1px var(--oro-osc);
   text-stroke:1px var(--oro-osc);
 }
-.thumb{ display:block; overflow:hidden; flex:0 0 auto; }
-.thumb img{ object-fit:cover; width:100%; height:100%; }
-.thumb--1{ width:clamp(84px,11vw,168px); aspect-ratio:4/3; }
-.thumb--2{ width:clamp(72px,9vw,132px); aspect-ratio:1/1; }
 
 .editorial__foot{
   display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,80px);
@@ -915,8 +911,6 @@ button,input,select,textarea{ font:inherit; color:inherit; }
 @media (max-width:560px){
   .quick__grid{ grid-template-columns:1fr; }
   .editorial__type{ gap:8px 12px; }
-  .thumb--1{ width:96px; }
-  .thumb--2{ width:74px; }
   .btn{ padding:14px 26px; }
   .hero__actions .btn{ flex:1 1 auto; }
   .retreat__facts{ grid-template-columns:1fr; }
