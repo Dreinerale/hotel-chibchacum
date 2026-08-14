@@ -161,7 +161,7 @@ Tomados de la página de Facebook del hotel y de fuentes públicas:
 - Cra 2 N° 6-46, Zetaquira, Boyacá · se admiten mascotas avisando con anticipación
 - Habitaciones sencillas y dobles con baño privado, agua caliente, parqueadero privado, internet
   y televisión por cable · 25 habitaciones · 15 años recibiendo huéspedes
-- Zetaquira: provincia de Lengupá, 1.665 m s. n. m., 67 km desde Tunja
+- Zetaquira: provincia de Lengupá, 1.665 m s. n. m., 69 km desde Tunja por la vía a Zetaquira
 - Aguas termales del río Mueche: ~32 nacederos, no volcánicas, bajas en azufre, hasta 68,5 °C
 - Cascada de los Ocho Colores: la cascada termal más alta de Colombia, 14 m
 
