@@ -111,7 +111,7 @@
     if (lastFocused) lastFocused.focus();
   };
 
-  document.querySelectorAll('.mosaic__item').forEach(function (fig) {
+  document.querySelectorAll('.mosaic__item, .shot').forEach(function (fig) {
     fig.setAttribute('tabindex', '0');
     fig.setAttribute('role', 'button');
     fig.addEventListener('click', function () { openLightbox(fig); });

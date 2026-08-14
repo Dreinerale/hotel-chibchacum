@@ -402,15 +402,17 @@ button,input,select,textarea{ font:inherit; color:inherit; }
 }
 .retreat__media{ position:absolute; inset:0; z-index:-2; }
 .retreat__media img{
-  width:100%; height:100%; object-fit:cover;
-  filter:saturate(.5) sepia(.2) contrast(1.05);
+  width:100%; height:100%; object-fit:cover; object-position:center 35%;
+  filter:saturate(.62) sepia(.14) contrast(1.02) brightness(1.04);
 }
+/* El velo tiene que dejar ver el campo: oscurece la columna del texto y
+   se abre hacia la derecha, donde no hay nada que leer. */
 .retreat__veil{
   position:absolute; inset:0;
   background:
-    linear-gradient(180deg, rgba(11,9,7,.9) 0%, rgba(11,9,7,.58) 40%, rgba(11,9,7,.92) 100%),
-    linear-gradient(90deg, rgba(11,9,7,.94) 0%, rgba(11,9,7,.42) 58%, rgba(11,9,7,.2) 100%),
-    linear-gradient(140deg, rgba(138,95,20,.3), rgba(90,54,6,.4));
+    linear-gradient(180deg, rgba(11,9,7,.86) 0%, rgba(11,9,7,.3) 44%, rgba(11,9,7,.88) 100%),
+    linear-gradient(90deg, rgba(11,9,7,.92) 0%, rgba(11,9,7,.3) 58%, rgba(11,9,7,.14) 82%, rgba(11,9,7,.52) 100%),
+    linear-gradient(140deg, rgba(138,95,20,.16), rgba(90,54,6,.24));
 }
 
 /* etiqueta vertical sobre el borde izquierdo, en el margen que deja el wrap */
@@ -458,6 +460,29 @@ button,input,select,textarea{ font:inherit; color:inherit; }
   margin-top:14px; font-size:.76rem; letter-spacing:.14em; text-transform:uppercase;
   color:rgba(255,254,250,.55);
 }
+
+/* tira de fotos: se abren en la misma lupa que el mosaico de termales */
+.retreat__shots{
+  margin-top:clamp(44px,6vw,84px);
+  display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(10px,1.4vw,20px);
+}
+.shot{
+  margin:0; overflow:hidden; position:relative; cursor:zoom-in; background:var(--tinta);
+  border:1px solid rgba(192,154,60,.22);
+}
+.shot img{
+  width:100%; height:100%; aspect-ratio:4/5; object-fit:cover; display:block;
+  transition:transform .8s var(--ease), filter .5s var(--ease);
+}
+.shot:hover img{ transform:scale(1.06); filter:brightness(.7); }
+.shot::after{
+  content:attr(data-caption); position:absolute; left:0; right:0; bottom:0;
+  padding:14px 16px; font-size:.74rem; line-height:1.35; color:var(--blanco);
+  background:linear-gradient(0deg, rgba(11,9,7,.92), rgba(11,9,7,0));
+  opacity:0; transform:translateY(8px); transition:.4s var(--ease);
+}
+.shot:hover::after,
+.shot:focus-visible::after{ opacity:1; transform:translateY(0); }
 
 /* =========================================================
    SPLIT TIPOGRÁFICO
@@ -879,6 +904,7 @@ button,input,select,textarea{ font:inherit; color:inherit; }
 
   .retreat__tag{ display:none; }
   .retreat__inset{ grid-column:1/13; }
+  .retreat__shots{ grid-template-columns:1fr 1fr; }
 }
 
 @media (max-width:560px){

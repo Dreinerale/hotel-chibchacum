@@ -41,17 +41,20 @@ hotel-chibchacum/
     ├── habitacion-sencilla.jpg ← sencilla, cama doble
     ├── habitacion-doble.jpg    ← doble, dos camas separadas
     ├── habitacion-familiar.jpg ← familiar, camarote y cama doble
-    ├── casa-campo.jpg      ← ⚠️ PROVISIONAL — fondo de la sección Casa de campo
-    ├── casa-campo-2.jpg    ← ⚠️ PROVISIONAL — foto vertical de la Casa de campo
+    ├── casa-campo.jpg        ← casa de campo, vista aérea (fondo de la sección)
+    ├── casa-campo-2.jpg      ← fachada de la casa de campo (recuadro vertical)
+    ├── casa-campo-cuarto.jpg ← la alcoba
+    ├── casa-campo-cocina.jpg ← cocina y comedor
+    ├── casa-campo-vista.jpg  ← la vista hacia el cañón
+    ├── casa-campo-lagos.jpg  ← los lagos, el puente y el kiosco
     ├── cafe.jpg            ← café de la región
     └── zetaquira-plaza.jpg ← parque principal de Zetaquira
 ```
 
-> **Las dos `casa-campo*.jpg` son provisionales.** Ahora mismo tienen fotos del
-> embalse y de la cascada, solo para que la sección no se vea vacía. Cuando lleguen
-> las fotos reales basta con **sobrescribir esos dos archivos conservando el nombre**:
-> no hay que tocar el HTML. `casa-campo.jpg` se usa a lo ancho de fondo (conviene
-> apaisada) y `casa-campo-2.jpg` va en el recuadro vertical.
+> Las fotos de la casa de campo salieron de `Escritorio\Fotos Campo`. Se
+> redimensionaron y recomprimieron para que la página no pese de más. Para cambiar
+> cualquiera basta con **sobrescribir el archivo conservando el nombre**: no hay que
+> tocar el HTML.
 
 ---
 
@@ -90,11 +93,12 @@ mismo orden que el degradado del logo.
    solo hay que reemplazar los archivos `img/habitacion-*.jpg` conservando los nombres.
 5. **Boletín** — ✅ el formulario del footer usa el mismo envío del punto 3; los correos
    suscritos llegan al mismo buzón con el asunto «Nueva suscripción al boletín».
-6. **Casa de campo** — ⬅️ **falta información real.** La sección `#casa-campo` ya está
-   diseñada, pero los textos son deliberadamente generales porque todavía no tenemos
-   los datos. Faltan: fotos reales, nombre propio (si tiene), capacidad en personas,
-   a qué distancia o cuántos minutos está del pueblo, qué incluye (cocina, zona verde,
-   parqueadero, etc.) y si hay algún mínimo de noches.
+6. **Casa de campo** — ✅ sección `#casa-campo` con fotos reales. Capacidad de 3 a 4
+   personas, casa completa por noches. Lo que se afirma en el texto sale de las fotos:
+   cocina equipada, comedor, baño privado con ducha, zona verde, dos lagos con puente
+   y kiosco. Quedan por confirmar tres cosas menores: si la casa tiene nombre propio,
+   a cuántos minutos está del pueblo y si hay mínimo de noches. Si nos las dan, se
+   agregan a la rejilla de datos de la sección.
 
 ---
 
