@@ -83,8 +83,10 @@ mismo orden que el degradado del logo.
 
 ## ⚠️ Antes de publicar — pendientes
 
-1. **Teléfono** — ✅ `310 816 9518`. Está en la sección de contacto (con enlace `tel:` y
-   enlace de WhatsApp a `wa.me/573108169518`) y en el footer.
+1. **Teléfono y WhatsApp** — ✅ son dos líneas distintas. El teléfono es `310 816 9518`
+   (con enlace `tel:`), en la sección de contacto y en el footer. El WhatsApp es
+   `314 200 3387` (enlace a `wa.me/573142003387`), en la sección de contacto y en el
+   aviso de error del formulario (`js/main.js`).
 2. **Correo** — ✅ `admin@hotelchibchacum.co`. Está en la sección de contacto, en el footer y
    en `js/main.js` (variable `href` dentro del `submit` del formulario).
 3. **Formulario** — ✅ **funcionando.** Activado y probado con envíos reales: las solicitudes

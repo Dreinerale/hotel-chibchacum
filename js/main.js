@@ -280,7 +280,7 @@
         setStatus(status,
           'No pudimos enviar la solicitud. '
           + '<a class="link-gold" href="' + enlaceCorreo() + '">Envíela por correo</a> '
-          + 'o escríbanos por WhatsApp al 310 816 9518.', 'error');
+          + 'o escríbanos por WhatsApp al 314 200 3387.', 'error');
       })
       .then(function () {
         enviando = false;
