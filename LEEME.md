@@ -42,6 +42,7 @@ hotel-chibchacum/
     ├── habitacion-sencilla.jpg ← sencilla, cama doble
     ├── habitacion-doble.jpg    ← doble, dos camas separadas
     ├── habitacion-familiar.jpg ← familiar, camarote y cama doble
+    ├── habitacion-vista.jpg    ← mesa junto a la ventana con vista a la montaña
     ├── casa-campo.jpg        ← casa de campo, vista aérea (fondo de la sección)
     ├── casa-campo-2.jpg      ← fachada de la casa de campo (recuadro vertical)
     ├── casa-campo-cuarto.jpg ← la alcoba

@@ -507,7 +507,9 @@ button,input,select,textarea{ font:inherit; color:inherit; }
 .split__fig--1{ grid-column:5/9; }
 .split__fig--1 img{ aspect-ratio:4/3; }
 .split__fig--2{ grid-column:1/6; }
-.split__fig--2 img{ aspect-ratio:3/2; }
+/* La foto es vertical y en 3:2 solo cabe la mitad del alto. El encuadre se sube
+   para que entren la ventana con la montaña y la mesa, no el piso. */
+.split__fig--2 img{ aspect-ratio:3/2; object-position:center 18%; }
 .split__note{
   grid-column:9/13; font-size:.94rem; color:var(--marron-cl); margin:0;
   border-left:1px solid rgba(138,95,20,.32); padding-left:20px;
