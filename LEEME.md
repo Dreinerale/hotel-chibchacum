@@ -35,6 +35,8 @@ hotel-chibchacum/
     ├── logo.png            ← logo con fondo transparente (generado del original)
     ├── logo-original.jpg   ← logo tal como lo entregó usted
     ├── favicon.png
+    ├── herencia-muisca.jpg ← logo en grande para la banda «Herencia · Muisca»,
+    │                          ya compuesto sobre el fondo #14100B de la banda
     ├── fachada.jpg         ← fachada del hotel (hero y tarjeta de habitaciones)
     ├── hotel-calle.jpg     ← el hotel desde la carrera 2, con la montaña (mosaico)
     ├── cascada-termal.jpg  ← cascada de los Ocho Colores

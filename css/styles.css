@@ -529,19 +529,19 @@ button,input,select,textarea{ font:inherit; color:inherit; }
   white-space:nowrap;
 }
 .hero-band__line--back{ position:relative; z-index:1; }
+/* Sin solape: la figura es el logo y abajo lleva "Zetaquira" escrito, que
+   quedaba tapado cuando "Muisca" subía sobre la imagen. */
 .hero-band__line--front{
-  position:relative; z-index:3; margin-top:-.22em;
+  position:relative; z-index:3; margin-top:.02em;
   background:linear-gradient(100deg,var(--oro-osc),var(--oro-cl) 45%,var(--oro) 100%);
   -webkit-background-clip:text; background-clip:text; color:transparent;
 }
+/* La figura es el logo, casi cuadrado y con su propio fondo del mismo color
+   que la banda: se deja a su proporción natural en vez de recortarlo a 16:9. */
 .hero-band__fig{
-  position:relative; z-index:2; margin:-.16em 0 0; width:min(62%,640px);
+  position:relative; z-index:2; margin:-.16em 0 0; width:min(42%,400px);
 }
-.hero-band__fig img{ width:100%; aspect-ratio:16/9; object-fit:cover; }
-.hero-band__watermark{
-  position:absolute; right:-4%; top:50%; transform:translateY(-50%);
-  height:120%; width:auto; opacity:.05; z-index:0; pointer-events:none;
-}
+.hero-band__fig img{ width:100%; height:auto; }
 
 /* =========================================================
    TERMALES + MOSAICO
@@ -899,8 +899,7 @@ button,input,select,textarea{ font:inherit; color:inherit; }
   .mosaic__item--tall{ grid-row:span 1; }
 
   .place__data{ grid-template-columns:1fr; }
-  .hero-band__fig{ width:82%; }
-  .hero-band__watermark{ display:none; }
+  .hero-band__fig{ width:68%; }
   .foot__grid{ grid-template-columns:1fr; }
 
   .retreat__tag{ display:none; }
