@@ -35,7 +35,8 @@ hotel-chibchacum/
     ├── logo.png            ← logo con fondo transparente (generado del original)
     ├── logo-original.jpg   ← logo tal como lo entregó usted
     ├── favicon.png
-    ├── fachada.jpg         ← fachada del hotel
+    ├── fachada.jpg         ← fachada del hotel (hero y tarjeta de habitaciones)
+    ├── hotel-calle.jpg     ← el hotel desde la carrera 2, con la montaña (mosaico)
     ├── cascada-termal.jpg  ← cascada de los Ocho Colores
     ├── laguna.jpg          ← embalse / paisaje de Lengupá
     ├── habitacion-sencilla.jpg ← sencilla, cama doble

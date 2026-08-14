@@ -594,7 +594,10 @@ button,input,select,textarea{ font:inherit; color:inherit; }
 .mosaic__item:hover::after{ opacity:1; transform:translateY(0); }
 .mosaic__item--big{ grid-column:span 2; grid-row:span 2; }
 .mosaic__item--tall{ grid-row:span 2; }
-.mosaic__item--wide{ grid-column:1 / -1; }
+/* Ocupa el ancho completo, pero con dos filas de alto: a una sola fila la foto
+   quedaba en una franja de 6:1 y se veía estirada. */
+.mosaic__item--wide{ grid-column:1 / -1; grid-row:span 2; }
+.mosaic__item--wide img{ object-position:center 58%; }
 
 .thermal__notes{
   display:grid; grid-template-columns:repeat(3,1fr);
