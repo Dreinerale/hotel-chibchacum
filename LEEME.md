@@ -44,7 +44,7 @@ hotel-chibchacum/
     ├── habitacion-familiar.jpg ← familiar, camarote y cama doble
     ├── habitacion-vista.jpg    ← mesa junto a la ventana con vista a la montaña
     ├── casa-campo.jpg        ← casa de campo, vista aérea (fondo de la sección)
-    ├── casa-campo-2.jpg      ← fachada de la casa de campo (recuadro vertical)
+    ├── casa-campo-2.jpg      ← la casa de campo de frente (recuadro de la sección)
     ├── casa-campo-cuarto.jpg ← la alcoba
     ├── casa-campo-cocina.jpg ← cocina y comedor
     ├── casa-campo-vista.jpg  ← la vista hacia el cañón
