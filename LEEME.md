@@ -46,7 +46,7 @@ hotel-chibchacum/
     ├── casa-campo-cuarto.jpg ← la alcoba
     ├── casa-campo-cocina.jpg ← cocina y comedor
     ├── casa-campo-vista.jpg  ← la vista hacia el cañón
-    ├── casa-campo-lagos.jpg  ← los lagos, el puente y el kiosco
+    ├── casa-campo-lagos.jpg  ← los lagos, el puente y la zona de BBQ
     ├── cafe.jpg            ← café de la región
     └── zetaquira-plaza.jpg ← parque principal de Zetaquira
 ```
@@ -94,11 +94,10 @@ mismo orden que el degradado del logo.
 5. **Boletín** — ✅ el formulario del footer usa el mismo envío del punto 3; los correos
    suscritos llegan al mismo buzón con el asunto «Nueva suscripción al boletín».
 6. **Casa de campo** — ✅ sección `#casa-campo` con fotos reales. Capacidad de 3 a 4
-   personas, casa completa por noches. Lo que se afirma en el texto sale de las fotos:
-   cocina equipada, comedor, baño privado con ducha, zona verde, dos lagos con puente
-   y kiosco. Quedan por confirmar tres cosas menores: si la casa tiene nombre propio,
-   a cuántos minutos está del pueblo y si hay mínimo de noches. Si nos las dan, se
-   agregan a la rejilla de datos de la sección.
+   personas, casa completa por noches, a 10 minutos del pueblo. Lo demás sale de las
+   fotos: cocina equipada, comedor, baño privado con ducha, zona verde, dos lagos con
+   puente y zona de BBQ. Quedan por confirmar dos cosas menores: si la casa tiene
+   nombre propio y si hay mínimo de noches.
 
 ---
 
@@ -160,7 +159,7 @@ Tomados de la página de Facebook del hotel y de fuentes públicas:
 
 - Cra 2 N° 6-46, Zetaquira, Boyacá · se admiten mascotas avisando con anticipación
 - Habitaciones sencillas y dobles con baño privado, agua caliente, parqueadero privado, internet
-  y televisión por cable · 19 habitaciones
+  y televisión por cable · 25 habitaciones · 15 años recibiendo huéspedes
 - Zetaquira: provincia de Lengupá, 1.665 m s. n. m., 67 km desde Tunja
 - Aguas termales del río Mueche: ~32 nacederos, no volcánicas, bajas en azufre, hasta 68,5 °C
 - Cascada de los Ocho Colores: la cascada termal más alta de Colombia, 14 m
