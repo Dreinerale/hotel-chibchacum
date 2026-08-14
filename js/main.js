@@ -132,6 +132,14 @@
   var form = document.getElementById('reservaForm');
   var status = document.getElementById('formStatus');
 
+  /* Enlaces que bajan al formulario diciendo por qué se escribe (casa de campo,
+     por ejemplo). Solo escriben si el visitante no ha puesto nada suyo. */
+  document.querySelectorAll('[data-prefill]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (!form.mensaje.value.trim()) form.mensaje.value = a.getAttribute('data-prefill');
+    });
+  });
+
   var setError = function (input, msg) {
     var field = input.closest('.field');
     field.classList.toggle('is-invalid', Boolean(msg));
