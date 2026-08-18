@@ -50,7 +50,7 @@ hotel-chibchacum/
     ├── casa-campo-jardin.jpg ← la zona verde, con los juegos y la montaña
     ├── casa-campo-cocina.jpg ← cocina y comedor
     ├── casa-campo-vista.jpg  ← la vista hacia el cañón
-    ├── casa-campo-lagos.jpg  ← los lagos, el puente y el kiosco
+    ├── casa-campo-lago.jpg   ← el lago, el puente y el kiosco
     ├── cafe.jpg            ← café de la región
     └── zetaquira-plaza.jpg ← parque principal de Zetaquira
 ```
@@ -102,7 +102,7 @@ mismo orden que el degradado del logo.
 6. **Casa de campo** — ✅ sección `#casa-campo` con fotos reales. **No es alojamiento:**
    se alquila por el día para uso recreativo — eventos, celebraciones, integraciones y
    descanso —, sin límite de personas y sin pasar la noche. El grupo puede usar la cocina
-   y el baño. A 10 minutos del pueblo, con zona verde, dos lagos con puente y kiosco.
+   y el baño. A 10 minutos del pueblo, con zona verde, un lago grande con puente y kiosco.
    Queda por confirmar una cosa menor: si la casa tiene nombre propio.
 
 ---
