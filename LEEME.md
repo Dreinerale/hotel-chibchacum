@@ -25,6 +25,46 @@ npx serve .
 
 ---
 
+## SEO — qué se hizo y qué falta
+
+El objetivo es salir de primero cuando alguien busque **«hotel en Zetaquira»**. Para
+«Zetaquira» a secas no es realista: esa búsqueda la dominan Wikipedia, la alcaldía y los
+portales de turismo, y quien la escribe casi nunca está buscando hotel.
+
+### Hecho en la página
+
+- **Título y descripción** orientados a la búsqueda real: «Hotel en Zetaquira, Boyacá ·
+  Hotel Chibchacum». Es lo que Google muestra como titular del resultado.
+- **Enlace canónico** a `https://hotelchibchacum.co/`, para que las dos direcciones (con y
+  sin `www`) no compitan entre sí como si fueran páginas distintas.
+- **Datos estructurados `schema.org/Hotel`** completos: dirección, teléfono, correo,
+  coordenadas, enlace al mapa, Facebook, fotos, servicios y que se admiten mascotas. Es lo
+  que le permite a Google entender que esto es un hotel y no un blog.
+- **Etiquetas de ubicación** (`geo.region`, `geo.position`) y **vista previa al compartir**
+  en WhatsApp y Facebook con imagen y direcciones absolutas.
+- **`sitemap.xml`** con la página y sus fotos principales, y **`robots.txt`** apuntando a él.
+
+### ⚠️ Lo que falta, y pesa más que todo lo anterior
+
+**El perfil de Google Business (la ficha de Google Maps).** En búsquedas locales como
+«hotel en Zetaquira», Google muestra primero el mapa con las fichas, y solo debajo los
+sitios web. Sin ficha reclamada, la página puede estar perfecta y aun así aparecer por
+debajo. Se reclama gratis en `business.google.com` y hay que verificar la dirección.
+
+Después: dar de alta el sitio en **Google Search Console** (`search.google.com/search-console`),
+verificarlo con el registro TXT que ellos den y enviar el sitemap. Sin eso, Google puede
+tardar semanas en encontrar la página; con eso, días.
+
+### Datos por confirmar
+
+- **Cuántas habitaciones son.** La página dice diecinueve, este documento decía 25 y el
+  sistema de reservas tiene 20 registradas. En los datos estructurados quedó 19, que es lo
+  que ve el visitante — pero conviene unificar los tres.
+- **El rango de precios.** Quedó como `$$` (medio). Si la noche está por debajo de unos
+  120.000 pesos, debería ser `$`.
+
+---
+
 ## Dónde vive el sitio
 
 | Dirección | Qué es |
