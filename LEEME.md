@@ -44,16 +44,38 @@ portales de turismo, y quien la escribe casi nunca está buscando hotel.
   en WhatsApp y Facebook con imagen y direcciones absolutas.
 - **`sitemap.xml`** con la página y sus fotos principales, y **`robots.txt`** apuntando a él.
 
+### Google Search Console — ✅ configurado
+
+El sitio está dado de alta como **propiedad de dominio** (`sc-domain:hotelchibchacum.co`),
+que cubre de una vez el dominio, el `www`, los subdominios y http y https. La verificación
+es por registro TXT en el DNS de Spaceship: **ese registro no se puede borrar**, o se
+pierde la verificación.
+
+Ahí se consulta, sin costo, con qué palabras llega la gente al sitio, en qué posición
+aparece y si Google encuentra algún error. Vale la pena mirarlo una vez al mes.
+
+El `sitemap.xml` quedó enviado. Al principio aparece como «No se ha podido obtener»: es
+normal, significa que Google todavía no lo ha leído, no que esté mal. Se comprobó que
+responde correctamente a Googlebot (HTTP 200, `application/xml`).
+
+La página **ya estaba indexada** antes de este trabajo, así que no hubo que esperar a que
+Google la descubriera. Se pidió una reindexación para que recoja el título y la
+descripción nuevos; eso suele tardar entre unos días y dos semanas en verse en los
+resultados.
+
 ### ⚠️ Lo que falta, y pesa más que todo lo anterior
 
 **El perfil de Google Business (la ficha de Google Maps).** En búsquedas locales como
 «hotel en Zetaquira», Google muestra primero el mapa con las fichas, y solo debajo los
-sitios web. Sin ficha reclamada, la página puede estar perfecta y aun así aparecer por
-debajo. Se reclama gratis en `business.google.com` y hay que verificar la dirección.
+sitios web. El negocio ya está reclamado; lo que queda es mantenerlo vivo:
 
-Después: dar de alta el sitio en **Google Search Console** (`search.google.com/search-console`),
-verificarlo con el registro TXT que ellos den y enviar el sitemap. Sin eso, Google puede
-tardar semanas en encontrar la página; con eso, días.
+- Que los datos coincidan **letra por letra** con los de la web: *Hotel Chibchacum,
+  Cra 2 N° 6-46, Zetaquira, 310 816 9518*. Las diferencias entre una fuente y otra le
+  restan confianza a Google.
+- Que el sitio web enlazado en la ficha sea `https://hotelchibchacum.co`.
+- Subir fotos: las fichas con fotos reciben bastantes más visitas.
+- **Pedir reseñas a los huéspedes.** Es el factor que más mueve la aguja en búsquedas
+  locales, y no hay atajo que lo reemplace.
 
 ### Datos por confirmar
 
@@ -89,6 +111,7 @@ no borre los que ya están.**
 | `app` | CNAME | El sistema de reservas en Vercel |
 | `@` | MX + TXT | El correo `@hotelchibchacum.co` en Spacemail, con su SPF y su DKIM |
 | `send` | MX + TXT | Los correos que envía el sistema de reservas (Resend) |
+| `@` | TXT | `google-site-verification=…` — es lo que mantiene verificada la propiedad en Google Search Console. Si se borra, se pierde la verificación. |
 
 Dos cosas que confunden al configurarlo:
 
