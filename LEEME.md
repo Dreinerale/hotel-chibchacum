@@ -171,7 +171,7 @@ dirección hay que activar una vez más:
 |---|---|
 | `localhost` (pruebas locales) | ✅ activado |
 | `dreinerale.github.io` (dirección anterior) | ✅ activado y probado |
-| `hotelchibchacum.co` (**dominio actual**) | ⚠️ pendiente: haga un envío de prueba y active |
+| `hotelchibchacum.co` (**dominio actual**) | ✅ activado |
 
 **Cómo se resuelve siempre:** haga un envío de prueba desde el sitio; FormSubmit le manda
 un correo con el botón «Activate Form» a `admin@hotelchibchacum.co`; haga clic y ya queda
