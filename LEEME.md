@@ -22,6 +22,42 @@ Si quiere servirlo en local (recomendado para probar como en producción):
 npx serve .
 ```
 
+
+---
+
+## Dónde vive el sitio
+
+| Dirección | Qué es |
+|---|---|
+| **https://hotelchibchacum.co** | El sitio. Es la dirección principal. |
+| `www.hotelchibchacum.co` | Redirige a la anterior. |
+| `dreinerale.github.io/hotel-chibchacum` | Dirección anterior de GitHub; ahora redirige al dominio. |
+| `app.hotelchibchacum.co` | El sistema de reservas (Vercel). **No tiene relación con este sitio.** |
+
+El sitio se publica solo: cada `git push` a la rama `main` lo actualiza en uno o dos minutos.
+
+### Cómo está armado el DNS (en Spaceship)
+
+El dominio usa los nameservers de Spaceship (`launch1`/`launch2.spaceship.net`) y ahí
+conviven cuatro cosas distintas. **Si alguna vez hay que tocar el DNS, agregue registros;
+no borre los que ya están.**
+
+| Host | Tipo | Para qué |
+|---|---|---|
+| `@` | A ×4 | Las cuatro IP de GitHub Pages (`185.199.108–111.153`). Son cuatro para que el sitio siga en pie si a GitHub se le cae un servidor. |
+| `www` | CNAME | `dreinerale.github.io` |
+| `app` | CNAME | El sistema de reservas en Vercel |
+| `@` | MX + TXT | El correo `@hotelchibchacum.co` en Spacemail, con su SPF y su DKIM |
+| `send` | MX + TXT | Los correos que envía el sistema de reservas (Resend) |
+
+Dos cosas que confunden al configurarlo:
+
+- En el campo **Host** hay que escribir `@` a mano. Si se deja vacío no guarda.
+- Al agregar el segundo, tercer y cuarto registro A, Spaceship avisa de un «registro A en
+  conflicto». **Es normal y hay que continuar:** GitHub pide justamente las cuatro.
+
+La raíz del dominio va con registros **A** y no con CNAME a propósito: un CNAME en la raíz
+no puede convivir con otros registros y tumbaría el correo, que vive en ese mismo nombre.
 ---
 
 ## Estructura
@@ -134,8 +170,8 @@ dirección hay que activar una vez más:
 | Dominio | Estado |
 |---|---|
 | `localhost` (pruebas locales) | ✅ activado |
-| `dreinerale.github.io` (sitio publicado) | ✅ activado y probado |
-| `hotelchibchacum.co` (cuando se conecte) | pendiente, llegará otro correo |
+| `dreinerale.github.io` (dirección anterior) | ✅ activado y probado |
+| `hotelchibchacum.co` (**dominio actual**) | ⚠️ pendiente: haga un envío de prueba y active |
 
 **Cómo se resuelve siempre:** haga un envío de prueba desde el sitio; FormSubmit le manda
 un correo con el botón «Activate Form» a `admin@hotelchibchacum.co`; haga clic y ya queda
