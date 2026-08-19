@@ -94,6 +94,10 @@ El **WhatsApp** aparece distinto en cada lado: la ficha de Google manda a
 `wa.me/3108169508` (el mismo número del teléfono fijo del hotel) y el sitio usa el
 `314 200 3387`. Falta decidir cuál es el bueno y dejar el mismo en los dos lados.
 
+El **nombre de la ficha** estaba escrito «Hotel Chichacum», sin la be. Se corrigió a
+«Hotel Chibchacum» y quedó pendiente de revisión por parte de Google — esas ediciones
+tardan unos minutos y no exigieron volver a verificar el negocio.
+
 ---
 
 ## Dónde vive el sitio
