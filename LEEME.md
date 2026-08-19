@@ -70,20 +70,29 @@ resultados.
 sitios web. El negocio ya está reclamado; lo que queda es mantenerlo vivo:
 
 - Que los datos coincidan **letra por letra** con los de la web: *Hotel Chibchacum,
-  Cra 2 N° 6-46, Zetaquira, 310 816 9518*. Las diferencias entre una fuente y otra le
+  Cra 2 N° 6-46, Zetaquira, 310 816 9508*. Las diferencias entre una fuente y otra le
   restan confianza a Google.
 - Que el sitio web enlazado en la ficha sea `https://hotelchibchacum.co`.
 - Subir fotos: las fichas con fotos reciben bastantes más visitas.
 - **Pedir reseñas a los huéspedes.** Es el factor que más mueve la aguja en búsquedas
   locales, y no hay atajo que lo reemplace.
 
-### Datos por confirmar
+### Datos confirmados por el hotel
 
-- **Cuántas habitaciones son.** La página dice diecinueve, este documento decía 25 y el
-  sistema de reservas tiene 20 registradas. En los datos estructurados quedó 19, que es lo
-  que ve el visitante — pero conviene unificar los tres.
-- **El rango de precios.** Quedó como `$$` (medio). Si la noche está por debajo de unos
-  120.000 pesos, debería ser `$`.
+- **Son 25 habitaciones.** La página decía diecinueve por error; ya está corregido en el
+  texto y en los datos estructurados. El sistema de reservas tiene 20 dadas de alta, así
+  que ahí faltan cinco por registrar.
+- **La noche cuesta 35.000 pesos**, así que el rango de precios quedó en `$`. La tarifa no
+  se publica en la página: si algún día se quiere mostrar, hay que acordarse de cambiarla
+  también aquí y en los datos estructurados.
+- **El teléfono es el `310 816 9508`**, el que estaba en la ficha de Google. El sitio tenía
+  `310 816 9518`, que era el equivocado, y ya se corrigió.
+
+### Lo que sigue sin cuadrar
+
+El **WhatsApp** aparece distinto en cada lado: la ficha de Google manda a
+`wa.me/3108169508` (el mismo número del teléfono fijo del hotel) y el sitio usa el
+`314 200 3387`. Falta decidir cuál es el bueno y dejar el mismo en los dos lados.
 
 ---
 
@@ -185,7 +194,7 @@ mismo orden que el degradado del logo.
 
 ## ⚠️ Antes de publicar — pendientes
 
-1. **Teléfono y WhatsApp** — ✅ son dos líneas distintas. El teléfono es `310 816 9518`
+1. **Teléfono y WhatsApp** — ✅ son dos líneas distintas. El teléfono es `310 816 9508`
    (con enlace `tel:`), en la sección de contacto y en el footer. El WhatsApp es
    `314 200 3387` (enlace a `wa.me/573142003387`), en la sección de contacto y en el
    aviso de error del formulario (`js/main.js`).
